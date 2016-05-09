@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<div th:fragment="admin_create_article" class="card-panel blue-grey darken-1">
+
+    <div class="card-content white-text">
+
+        <h6>Article</h6>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <label class="black-text">
+                    <select style="display: block" required=""
+                            ng-model="selectArticleData"
+                            ng-options="value.id as value.title group by value.category for value in articleData">
+                        <option value="" disabled="">Select Category</option>
+                    </select>
+
+                </label>
+            </div>
+        </div>
+
+        <h6>Image</h6>
+
+        <div class="row">
+
+            <div id="imageTypeDiv"></div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <button class="btn" ng-click="addNewChoice()">Add Image</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</html>

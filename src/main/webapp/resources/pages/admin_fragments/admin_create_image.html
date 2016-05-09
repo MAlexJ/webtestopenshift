@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<div th:fragment="admin_create_image" class="card-panel blue-grey darken-1">
+    <form name="imgFormCreate">
+
+        <div class="card-content white-text">
+            <h6><b>Create Image</b></h6>
+
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file" required="" file-model="imgFile"/>
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" name="" required="" type="text"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <input ng-model="imgRadio.name" type="checkbox" class="filled-in" id="filled-in-box"/>
+            <label class="white-text" for="filled-in-box">Save image</label>
+        </div>
+
+        <div class="card-content white-text">
+            <p>
+                <input ng-model="imgRadio.radio" value="ARTICLE" class="with-gap" type="radio"
+                       id="test1"/>
+                <label class="white-text" for="test1"> ARTICLE</label>
+            </p>
+            <p>
+                <input ng-model="imgRadio.radio" value="IMAGE" class="with-gap" type="radio"
+                       id="test2"/>
+                <label class="white-text" for="test2">IMAGE</label>
+            </p>
+            <p>
+                <input ng-model="imgRadio.radio" value="NONE" class="with-gap" type="radio" id="test3"/>
+                <label class="white-text" for="test3">NONE</label>
+            </p>
+        </div>
+
+        <div class="card-content white-text">
+            <p>
+                <button class="waves-effect waves-light btn"
+                        ng-click="uploadFile(imgFormCreate, imgRadio, imgFile)">Save Image
+                </button>
+            </p>
+        </div>
+
+    </form>
+
+    <br/>
+</div>
+
+</html>

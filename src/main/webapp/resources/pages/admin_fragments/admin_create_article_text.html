@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<div th:fragment="admin_create_article_text" class="card-panel blue-grey darken-1">
+    <div class="card-content white-text">
+        <h6><b>Text article</b></h6>
+
+        <div class="input-field col s12">
+            <div class="input-field">
+                <textarea ng-model="texta" id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Text</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m12 l12">
+        <div class="input-field">
+            <button ng-click="OnSave(createBlock, selectArticleData, texta, imgList)" class="btn">CREATE</button>
+        </div>
+    </div>
+
+</div>
+
+</html>
