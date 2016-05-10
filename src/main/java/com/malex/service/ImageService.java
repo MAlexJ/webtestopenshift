@@ -1,10 +1,14 @@
 package com.malex.service;
 
+import com.malex.model.dto.ImageDTO;
 import com.malex.model.entity.ImageEntity;
 
 import java.util.List;
 
 public interface ImageService {
+
+    ImageDTO saveDTO(ImageDTO dto);
+
     ImageEntity save(ImageEntity entity);
 
     ImageEntity update(ImageEntity entity);

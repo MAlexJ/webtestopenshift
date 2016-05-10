@@ -6,11 +6,13 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
+
 @NoArgsConstructor
 @MappedSuperclass
 public class BaseEntity {
+
+    @Getter
+    @Setter
     @Id
     @SequenceGenerator(name = "app_sequence", sequenceName = "app_sequence", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "app_sequence")
