@@ -1,6 +1,7 @@
 package com.malex.service;
 
 import com.malex.model.dto.ImageDTO;
+import com.malex.model.dto.ImageNamesAndIdsDTO;
 import com.malex.model.entity.ImageEntity;
 
 import java.util.List;
@@ -18,4 +19,8 @@ public interface ImageService {
     ImageEntity findById(Long id);
 
     List<ImageEntity> findAll();
+
+    List<ImageNamesAndIdsDTO> findAllNamesDTO();
+
+    ImageDTO findByIdDTO(Long id);
 }

@@ -6,15 +6,15 @@
         <h6 class="white-text"><b>Delete Image</b></h6>
 
         <select style="display: block"
-                ng-model="img"
-                ng-options="img.name for img in images">
+                ng-model="imgDel"
+                ng-options="imgDel.name for imgDel in imagesDel">
             <option value="" disabled="">Select</option>
         </select>
     </div>
 
     <div class="card-content white-text">
         <p>
-            <button class="waves-effect waves-light btn" ng-click="deleteImg(img.id)">Delete Image
+            <button class="waves-effect waves-light btn" ng-click="deleteImg(imgDel.id)">Delete Image
             </button>
         </p>
     </div>

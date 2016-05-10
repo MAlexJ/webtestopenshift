@@ -5,15 +5,15 @@
     <div class="card-content">
         <h6 class="white-text"><b>View Image</b></h6>
         <select style="display: block"
-                ng-model="img"
-                ng-options="img.name for img in images">
+                ng-model="imgFind"
+                ng-options="imgFind.name for imgFind in imagesPrev">
             <option value="" disabled="">Select</option>
         </select>
     </div>
 
     <div class="card-content white-text">
         <p>
-            <button class="waves-effect waves-light btn" ng-click="deleteImg(img.id)">View Image
+            <button class="waves-effect waves-light btn" ng-click="findImg(imgFind.id)">View Image
             </button>
         </p>
     </div>

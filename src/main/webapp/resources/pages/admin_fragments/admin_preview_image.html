@@ -2,7 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
 
 <div th:fragment="admin_preview_image" >
-  View
+
+
+    <div class="card hoverable" ng-if="imageViewId!=null">
+        <div class="card-image">
+            <a href="#"></a>
+            <img alt="{{imageViewId.name}}" data-ng-src="{{'data:image/png;base64,'+imageViewId.img}}"
+                 class="photo"/>
+            <span class="card-title">{{imageViewId.id}} {{imageViewId.name}}</span>
+        </div>
+        <div class="card-content">
+            <p><b>TYPE: </b>{{imageViewId.type}}</p>
+            <p><b>NAME: </b>{{imageViewId.name}}</p>
+        </div>
+    </div>
+
+
 </div>
 
 

@@ -1,16 +1,19 @@
 package com.malex.controller;
 
 import com.malex.model.dto.ImageDTO;
+import com.malex.model.dto.ImageNamesAndIdsDTO;
 import com.malex.model.enums.ImageType;
 import com.malex.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import java.util.List;
 
-@Controller
+
+@RestController
 @RequestMapping("/admin")
 public class AdminRestController {
 
@@ -28,8 +31,30 @@ public class AdminRestController {
             dto.setType(type);
             dto.setImg(file.getBytes());
             imageService.saveDTO(dto);
-            System.err.println(file.getOriginalFilename()); //TODO log
-            System.err.println(type.toString()); //TODO log
         }
     }
+
+    @RequestMapping(path = "/image", method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    @ResponseBody
+    public List<ImageNamesAndIdsDTO> admin_image_GET() {
+        return imageService.findAllNamesDTO();
+    }
+
+    @RequestMapping(path = "/image/{id}", method = RequestMethod.DELETE)
+    public void admin_image_DELETE(@PathVariable Long id) {
+        if (id > 0) {
+            imageService.delete(id);
+        }
+    }
+
+    @RequestMapping(path = "/image/{id}", method = RequestMethod.GET)
+    @ResponseBody
+    public ImageDTO admin_image_GET(@PathVariable Long id) {
+        if (id > 0) {
+           return imageService.findByIdDTO(id);
+        }
+        return null;
+    }
+
 }
