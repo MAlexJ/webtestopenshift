@@ -26,21 +26,21 @@
 
     <div class="row">
         <div class="col s12 ">
-            <h5>Article's Block</h5>
+            <h5>Article Block</h5>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col s12 m12 l4">
-            <!--Create Article-->
-            <div th:replace="admin_fragments/admin_create_article :: admin_create_article"></div>
+    <form name="articleCreateForm">
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <!--Create Article-->
+                <div th:replace="admin_fragments/admin_create_article :: admin_create_article"></div>
+            </div>
+
+            <div class="col s12 m12 l8">
+                <!--Create Text-->
+                <div th:replace="admin_fragments/admin_create_article_text :: admin_create_article_text"></div>
+            </div>
         </div>
-
-        <div class="col s12 m12 l8">
-            <!--Create Text-->
-            <div th:replace="admin_fragments/admin_create_article_text :: admin_create_article_text"></div>
-        </div>
-
-    </div>
-
+    </form>
 </div>

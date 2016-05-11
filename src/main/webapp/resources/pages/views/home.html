@@ -1,3 +1,136 @@
-<div class="container">
-   Home
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br/><br/>
+            <h1 class="header center white-text "
+                style="margin-top: 150px;text-shadow: 0 1px 0 #ccc,
+	               0 2px 0 #c9c9c9,
+	               0 3px 0 #bbb,
+	               0 4px 0 #b9b9b9,
+	               0 5px 0 #aaa,
+	               0 6px 1px rgba(0,0,0,.1),
+	               0 0 5px rgba(0,0,0,.1),
+	               0 1px 3px rgba(0, 0, 0, 0.12),
+	               0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0, 0, 0, 0.11),
+	               0 10px 10px rgba(0,0,0,.2),
+	               0 20px 20px rgba(0,0,0,.15);">
+                <b>Design Patterns</b></h1>
+
+            <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button"
+                   class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+            </div>
+            <br/><br/>
+
+        </div>
+    </div>
+    <div class="parallax"><img th:src="@{/resources/img/background3.png}" src="../../img/background3.png"
+                               alt="Background img 1"/></div>
 </div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m12 l4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center ">Creational design patterns</h5>
+                    <ul>
+                        <li class="brown-text"><b>Abstract Factory</b></li>
+                        Creates an instance of several families of classes<br/><br/>
+                        <li class="brown-text"><b>Builder</b></li>
+                        Separates object construction from its representation<br/><br/>
+                        <li class="brown-text"><b>Factory Method</b></li>
+                        Creates an instance of several derived classes<br/><br/>
+                        <li class="brown-text"><b>Object Pool</b></li>
+                        Avoid expensive acquisition and release of resources by recycling objects that are no longer in
+                        use<br/><br/>
+                        <li class="brown-text"><b>Prototype</b></li>
+                        A fully initialized instance to be copied or cloned<br/><br/>
+                        <li class="brown-text"><b>Singleton</b></li>
+                        A class of which only a single instance can exist<br/><br/>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Structural design patterns</h5>
+                    <ul>
+                        <li class="brown-text"><b>Adapter</b></li>
+                        Match interfaces of different classes<br/><br/>
+                        <li class="brown-text"><b>Bridge</b></li>
+                        Separates an object’s interface from its implementation<br/><br/>
+                        <li class="brown-text"><b>Composite</b></li>
+                        A tree structure of simple and composite objects<br/><br/>
+                        <li class="brown-text"><b>Decorator</b></li>
+                        Add responsibilities to objects dynamically<br/><br/>
+                        <li class="brown-text"><b>Facade</b></li>
+                        A single class that represents an entire subsystem<br/><br/>
+                        <li class="brown-text"><b>Flyweight</b></li>
+                        A fine-grained instance used for efficient sharing<br/><br/>
+                        <li class="brown-text"><b>Private Class Data</b></li>
+                        Restricts accessor/mutator access<br/><br/>
+                        <li class="brown-text"><b>Proxy</b></li>
+                        An object representing another object<br/><br/>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col s12 m12 l4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center ">Behavioral design patterns</h5>
+                    <ul>
+                        <li class="brown-text"><b>Chain of responsibility</b></li>
+                        A way of passing a request between a chain of objects <br/><br/>
+
+                        <li class="brown-text"><b>Command</b></li>
+                        Encapsulate a command request as an object<br/><br/>
+
+                        <li class="brown-text"><b>Interpreter</b></li>
+                        <br/> A way to include language elements in a program<br/>
+
+                        <li class="brown-text"><b>Iterator</b></li>
+                        <br/>Sequentially access the elements of a collection<br/>
+
+                        <li class="brown-text"><b>Mediator</b></li>
+                        Defines simplified communication between classes<br/><br/>
+
+                        <li class="brown-text"><b>Memento</b></li>
+                        Capture and restore an object's internal state<br/><br/>
+
+                        <li class="brown-text"><b>Null Object</b></li>
+                        Designed to act as a default value of an object<br/><br/>
+
+                        <li class="brown-text"><b>Observer</b></li>
+                        A way of notifying change to a number of classes<br/><br/>
+
+                        <li class="brown-text"><b>State</b></li>
+                        Alter an object's behavior when its state changes<br/><br/>
+
+                        <li class="brown-text"><b>Strategy</b></li>
+                        Encapsulates an algorithm inside a class<br/><br/>
+
+                        <li class="brown-text">Template method<b></b></li>
+                        Defer the exact steps of an algorithm to a subclass<br/><br/>
+
+                        <li class="brown-text"><b>Visitor</b></li>
+                        Defines a new operation to a class without change<br/><br/>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</html>

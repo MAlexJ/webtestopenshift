@@ -3,6 +3,7 @@ package com.malex.service;
 import com.malex.model.dto.ImageDTO;
 import com.malex.model.dto.ImageNamesAndIdsDTO;
 import com.malex.model.entity.ImageEntity;
+import com.malex.model.enums.ImageType;
 
 import java.util.List;
 
@@ -23,4 +24,6 @@ public interface ImageService {
     List<ImageNamesAndIdsDTO> findAllNamesDTO();
 
     ImageDTO findByIdDTO(Long id);
+
+    List<ImageNamesAndIdsDTO> findByIsAvailableAndType(boolean isAvailable, ImageType type);
 }

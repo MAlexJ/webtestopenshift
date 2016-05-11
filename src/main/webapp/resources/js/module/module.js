@@ -1,7 +1,7 @@
 'use strict';
 
 var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider) {
-
+    
     $(".button-collapse").sideNav();
 
     // ************  Home Page  ******************
@@ -30,7 +30,7 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
 });
 
 var myAdmin = angular.module('myAdmin', ["ngRoute"]).config(function ($routeProvider) {
-
+    
     // ************  Home Page  ******************
     $routeProvider.when('/home',
         {

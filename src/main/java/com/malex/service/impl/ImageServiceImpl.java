@@ -3,6 +3,7 @@ package com.malex.service.impl;
 import com.malex.model.dto.ImageDTO;
 import com.malex.model.dto.ImageNamesAndIdsDTO;
 import com.malex.model.entity.ImageEntity;
+import com.malex.model.enums.ImageType;
 import com.malex.repository.ImageRepository;
 import com.malex.service.ImageService;
 import org.dozer.Mapper;
@@ -66,5 +67,15 @@ public class ImageServiceImpl implements ImageService {
     @Override
     public ImageDTO findByIdDTO(Long id) {
         return beanMapper.map(findById(id), ImageDTO.class);
+    }
+
+    @Override
+    public List<ImageNamesAndIdsDTO> findByIsAvailableAndType(boolean isAvailable, ImageType type) {
+        List<ImageEntity> images = repository.findByIsAvailableAndType(isAvailable, type);
+        List<ImageNamesAndIdsDTO> imagesDTO = new ArrayList<>();
+        for (ImageEntity entity : images) {
+            imagesDTO.add(beanMapper.map(entity, ImageNamesAndIdsDTO.class));
+        }
+        return imagesDTO;
     }
 }
