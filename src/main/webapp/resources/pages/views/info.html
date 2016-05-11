@@ -9,13 +9,15 @@
                 <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                <a href="http://materializecss.com/getting-started.html" id="download-button"
+                   class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
             </div>
             <br/><br/>
 
         </div>
     </div>
-    <div class="parallax"><img th:src="@{/resources/img/background3.png}" src="../../img/background3.png" alt="Background img 1"/></div>
+    <div class="parallax"><img th:src="@{/resources/img/background3.png}" src="../../img/background3.png"
+                               alt="Background img 1"/></div>
 </div>
 
 
@@ -24,51 +26,389 @@
 
         <!--   Icon Section   -->
         <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Speeds up development</h5>
-
-                    <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
+            <div class="col s12 m6 l6 offset-m2 offset-l2">
                 <div class="icon-block">
                     <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                    <h5 class="center">User Experience Focused</h5>
-
-                    <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Easy to work with</h5>
-
-                    <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                    <h5 class="center">Используемые технологии <br/>при создании сайта</h5>
                 </div>
             </div>
         </div>
 
+        <!--   About   -->
+        <div class="row">
+
+            <!--AngularJS-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://angular.io/resources/images/logos/angular2/shield-with-beta.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">AngularJS<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://angularjs.org/">AngularJS</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">AngularJS:<i
+                                class="material-icons right">close</i></span>
+                        <p>AngularJS is an open-source web
+                            application framework mainly maintained by Google and by a community of individuals and
+                            corporations to address many of the challenges encountered in developing single-page
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Apache Commons-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.enterworks.com/wp-content/uploads/2015/11/apache.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Apache<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://commons.apache.org/">Apache Commons</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Apache Commons:<i
+                                class="material-icons right">close</i></span>
+                        <ol>
+                            <li>commons-io</li>
+                            <li>commons-fileupload</li>
+                            <li>commons-codec</li>
+                            <li>commons-dbcp2</li>
+                            <li>maven</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--JBoss-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.monitis.com/blog/wp-content/uploads/2012/03/jboss_logo.jpg"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Application Server<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://www.jboss.org/">JBoss</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">JBoss:<i
+                                class="material-icons right">close</i></span>
+                        <p>The JBoss Enterprise Application Platform (or JBoss EAP) is a subscription-based/open-source
+                            Java EE-based application server runtime platform used for building, deploying, and hosting
+                            highly-transactional Java applications and services.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--OpenShift-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/OpenShift-LogoType.svg/1024px-OpenShift-LogoType.svg.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Hosting<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://www.openshift.com/">OpenShift</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">OpenShift:<i
+                                class="material-icons right">close</i></span>
+                        <p>OpenShift is Red Hat's Platform-as-a-Service (PaaS) that allows developers to quickly
+                            develop, host, and scale applications in a cloud environment. With OpenShift you have a
+                            choice of offerings, including online, on-premise, and open source project options.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Git-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://hsto.org/getpro/habr/post_images/55e/4c7/551/55e4c75510c933abb382390fbd9501c6.jpg"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">CSV<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://www.openshift.com/">Git</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Git:<i
+                                class="material-icons right">close</i></span>
+                        <p>Git is a version control system that is widely used for software development and other
+                            version control tasks. It is a distributed revision control system with an emphasis on
+                            speed, data integrity, and support for distributed, non-linear workflows.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--mapper-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.constructionequipment.com/sites/ce/files/styles/article_big_img/public/D65PX-17.jpg?itok=yuDSjB4f"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Mapper<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://dozer.sourceforge.net/">Dozer</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Dozer:<i
+                                class="material-icons right">close</i></span>
+                        <p>Dozer is a Java Bean to Java Bean mapper that recursively copies data from one object to
+                            another. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Logger-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://2.bp.blogspot.com/-4QLDJo9kQlI/VlKwQY1dSbI/AAAAAAAAGH8/IqHWIVSigBM/w1200-h630-p-nu/slf4j-logo.jpg"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Logger<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://www.slf4j.org/">Slf4j</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Slf4j:<i
+                                class="material-icons right">close</i></span>
+                        <p>The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for
+                            various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to
+                            plug in the desired logging framework at deployment time.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Hibernate-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.civica-soft.com/sites/default/files/tecnologia/logo-hibernate.jpg"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Hibernate<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://hibernate.org/">Hibernate</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Hibernate:<i
+                                class="material-icons right">close</i></span>
+                        <p>Hibernate ORM (Hibernate in short) is an object-relational mapping framework for the Java
+                            language. It provides a framework for mapping an object-oriented domain model to a
+                            relational database.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--PostrgreSQL-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://varfalot.org/wp-content/uploads/2014/01/postgresql_sign_art.jpg"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">PostgreSQL<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://www.postgresql.org/">PostgreSQL</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">PostgreSQL:<i
+                                class="material-icons right">close</i></span>
+                        <p>PostgreSQL is an object-relational database management system (ORDBMS) with an emphasis on
+                            extensibility and standards-compliance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Spring-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://keylesson.com/wp-content/uploads/2014/11/springmvc.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Spring<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://spring.io/">Spring</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Spring:<i
+                                class="material-icons right">close</i></span>
+                        <ol>
+                            <li>Core</li>
+                            <li>MVC</li>
+                            <li>Security</li>
+                            <li>Data-Jpa</li>
+                            <li>Transaction</li>
+                            <li>Spring-Test</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 	Template Engine-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://kodcu.com/wp/wp-content/uploads/2014/09/thymeleaf-300x276.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Template Engine<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://www.thymeleaf.org/">Thymeleaf</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Thymeleaf:<i
+                                class="material-icons right">close</i></span>
+                        <p>Thymeleaf is a Java XML/XHTML/HTML5 template engine that can work both in web (Servlet-based)
+                            and non-web environments.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 	JSON  -->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAACvAAAAJDg4MWQwMTBjLTAyYjItNDAxMy1iMTQ2LWU1ZTAzMTE4NzM0Yw.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">JSON<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Jackson:<i
+                                class="material-icons right">close</i></span>
+                        <p>Jackson aims to be the best possible combination of fast, correct, lightweight, and ergonomic
+                            for developers. </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 </div>
 
 
 <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img th:src="@{/resources/img/background1.png}" src="../../img/background1.png" alt="Background img 2"/></div>
+    <div class="parallax"><img th:src="@{/resources/img/background1.png}" src="../../img/background1.png"
+                               alt="Background img 2"/></div>
 </div>
 
 <div class="container">
     <div class="section">
 
+        <!--   Icon Section   -->
         <div class="row">
-            <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>Contact Us</h4>
-                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Java Testing Tools:</h5>
+                </div>
             </div>
+        </div>
+
+        <div class="row">
+            <!--JUnit-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.geoactio.com/images/GeoActio/tecnologias/junit.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">JUnit<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://junit.org/junit4/">JUnit</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">JUnit:<i
+                                class="material-icons right">close</i></span>
+                        <p>JUnit is a unit testing framework for the Java programming language. JUnit has been important
+                            in the development of test-driven development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--JWebUnit-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://jwebunit.github.io/jwebunit/images/jwebunit-logo.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">JWebUnit<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="https://jwebunit.github.io/jwebunit/">JWebUnit</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">JWebUnit:<i
+                                class="material-icons right">close</i></span>
+                        <p>JWebUnit is a Java-based testing framework for web applications. It wraps existing testing
+                            frameworks such as HtmlUnit and Selenium with a unified, simple testing interface to allow
+                            you to quickly test the correctness of your web applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mockito-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Mockito_Logo.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Mockito<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://mockito.org/">Mockito</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Mockito:<i
+                                class="material-icons right">close</i></span>
+                        <p>Tasty mocking framework for unit tests in Java.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--DbUnit-->
+            <div class="col s6 m6 l3">
+                <div class="card small">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="http://www.somkiat.cc/wp-content/uploads/2014/06/dbunit-logo.png"/>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">DbUnit<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="http://dbunit.sourceforge.net/">DbUnit</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">DbUnit:<i
+                                class="material-icons right">close</i></span>
+                        <p>DbUnit is a JUnit extension targeted at database-driven projects that, among other things,
+                            puts your database into a known state between test runs.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
 
     </div>

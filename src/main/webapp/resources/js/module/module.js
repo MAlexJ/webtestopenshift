@@ -1,8 +1,20 @@
 'use strict';
 
 var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider) {
-    
+
     $(".button-collapse").sideNav();
+
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+
+
+    $(document).ready(function() {
+        $('input#text, textarea#textarea').characterCounter();
+    });
+
+
 
     // ************  Home Page  ******************
     $routeProvider.when('/home',

@@ -11,21 +11,28 @@ main {
 a {
     outline: 0;
 }
+
+.a_text_style {
+   font-size: 16px;
+}
+
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     line-height: 80px;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 80px;
 }
 
 nav {
     background: linear-gradient(to bottom, transparent, transparent 55px,
     rgba(0, 0, 0, 0.1) 80px,
     rgba(0, 0, 0, 0.1) 80px, transparent 57px, transparent) repeat scroll 0 0%, rgba(0, 0, 0, 0) linear-gradient(to right, #1abc9c 0px, #0cb5b8 100%) repeat scroll 0 0;
-
 }
 
 footer.page-footer .footer-copyright {
     background: linear-gradient(to bottom, transparent, transparent 55px,
     rgba(0, 0, 0, 0.1) 80px,
     rgba(0, 0, 0, 0.1) 80px, transparent 57px, transparent) repeat scroll 0 0%, rgba(0, 0, 0, 0) linear-gradient(to right, #149f87 0px, #17bbb1 100%) repeat scroll 0 0;
-
 }
 

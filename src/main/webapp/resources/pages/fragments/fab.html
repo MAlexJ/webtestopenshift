@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+<div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;" th:fragment="fab">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">launch</i>
+    </a>
+    <ul>
+        <li><a href="#/home" class="btn-floating red"><i class="material-icons">home</i></a></li>
+        <li><a href="#/articles" class="btn-floating yellow darken-1"><i class="material-icons">assessment</i></a></li>
+        <li><a href="#/info" class="btn-floating green"><i class="material-icons">info_outline</i></a></li>
+        <li><a data-target="modal_email" class="modal-trigger btn-floating blue"><i class="material-icons">email</i></a></li>
+        <li><a data-target="modal_login" class="modal-trigger btn-floating blue"><i class="material-icons">supervisor_account</i></a></li>
+    </ul>
+</div>
+</html>

@@ -50,6 +50,13 @@
 <nav th:replace="fragments/header :: header"></nav>
 <main>
     <ng-view></ng-view>
+    <div th:replace="fragments/fab :: fab" ></div>
+
+    <div th:replace="fragments/modal_email :: modal_email" ></div>
+
+    <div th:replace="fragments/modal_login :: modal_login" ></div>
+
+
 </main>
 <footer th:replace="fragments/footer :: footer"></footer>
 

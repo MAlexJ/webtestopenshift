@@ -3,18 +3,13 @@
 <nav th:fragment="header" class=" teal lighten-2" style="height: 80px">
     <div class="container">
         <div class="nav-wrapper">
-            <a href="#/" class="brand-logo">Logo</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#/" class="brand-logo">Design Patterns</a>
             <ul class="right hide-on-med-and-down" bs-active-link="">
-                <li class="active"><a href="#/home">Home</a></li>
-                <li><a href="#/articles">Articles</a></li>
-                <li><a href="#/info">Info</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo" bs-active-link="" style="transform: translateX(0px);">
-                <li><img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" /></li>
-                <li class="active"><a class="waves-effect waves-teal" href="#/home">Home</a></li>
-                <li><a class="waves-effect waves-teal" href="#/articles">Articles</a></li>
-                <li><a class="waves-effect waves-teal" href="#/info">Info</a></li>
+                <li class="active"><a href="#/home" class="a_text_style">Home</a></li>
+                <li><a href="#/articles" class="a_text_style">Articles</a></li>
+                <li><a href="#/info" class="a_text_style">Info</a></li>
+                <li><a data-target="modal_email" class="modal-trigger" ><i class="material-icons">email</i></a></li>
+                <li><a data-target="modal_login" class="modal-trigger" ><i class="material-icons">supervisor_account</i></a></li>
             </ul>
         </div>
     </div>

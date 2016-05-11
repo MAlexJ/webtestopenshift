@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<!-- Modal Structure -->
+<div id="modal_email" class="modal" th:fragment="modal_email">
+    <div class="modal-content">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+
+                    <div class="input-field col s8 m8 l4">
+                       <h5>Связаться с нами</h5>
+                    </div>
+                    <div class="input-field col s1 m1 l1 offset-s2 offset-m2 offset-l7">
+                        <a href="#!" class=" modal-action modal-close btn-floating btn-large waves-light red"><i class="material-icons">close</i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l6">
+                        <input id="input_text" type="text" length="20"/>
+                        <label for="input_text">Ваше имя</label>
+                    </div>
+
+                    <div class="input-field col s12 m12 l6">
+                        <input id="input_email" type="email" length="20"/>
+                        <label for="input_email">Ваш e-mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l12">
+                        <textarea id="textarea1" class="materialize-textarea" length="200"></textarea>
+                        <label for="textarea1">Введите текст сообщения</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="btn">Отправить</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</html>

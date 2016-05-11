@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<!-- Modal Structure -->
+<div id="modal_login" style="width: 450px" class="modal" th:fragment="modal_login">
+    <div class="modal-content">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+
+                    <div class="input-field col s8 m8 l4">
+                        <h5>Login</h5>
+                    </div>
+                    <div class="input-field col s1 m1 l1 offset-s2 offset-m2 offset-l6">
+                        <a href="#!" class=" modal-action modal-close btn-floating btn-large waves-light red"><i
+                                class="material-icons">close</i></a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="input_text" type="text" length="20"/>
+                        <label for="input_text">Имя пользователя:</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12 ">
+                        <input id="input_email" type="password" length="20"/>
+                        <label for="input_email">Пароль:</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <a class="btn">Войти</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</html>
