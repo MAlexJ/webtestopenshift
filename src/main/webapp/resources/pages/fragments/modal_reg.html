@@ -2,14 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
 
 <!-- Modal Structure -->
-<div id="modal_login"  class="modal small" th:fragment="modal_login">
+<div id="modal_reg" class="modal small" th:fragment="modal_reg">
     <div class="modal-content">
         <div class="row">
             <form class="col s12">
                 <div class="row">
 
                     <div class="input-field col s7 m8 l4">
-                        <h5>Login</h5>
+                        <h5>Регистрация</h5>
                     </div>
                     <div class="input-field col s1 m1 l1 offset-s2 offset-m2 offset-l7">
                         <a href="#!" class="modal-action modal-close btn-floating btn-large waves-light red"><i
@@ -32,11 +32,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s12 m12 l2">
-                        <a href="#!" class="btn modal-action modal-close" style="width: 100%; align-content: center">Войти</a>
-                    </div>
                     <div class="input-field col s12 m12 l3">
-                        <a data-target="modal_reg" class="modal-trigger modal-action modal-close btn red" style="width: 100%; align-content: center" >Регистрация</a>
+                        <a href="#!" class="modal-action modal-close btn"
+                           style="width: 100%; align-content: center">ОТПРАВИТЬ</a>
                     </div>
                 </div>
             </form>
